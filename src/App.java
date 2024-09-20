@@ -30,7 +30,8 @@ public class App {
         int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
         int multiplicación = dataStructuresPrep.multiplyAlgorithm(5, 5);
         int division = dataStructuresPrep.divideWAlgorithm(15, 5);
-        int perfecto = dataStructuresPrep.isPerfectNumber(28);
+        boolean perfecto = dataStructuresPrep.isPerfectNumber(28);
+        int factoral = dataStructuresPrep.getFactorial(4);
         /*
          * Imprimir el resultado de la operación.
          * 
@@ -50,5 +51,6 @@ public class App {
         System.out.println("el resultado de la multiplicacion: "+ multiplicación);
         System.out.println("el resultado de la division : " + division);
         System.out.println("el resultado de el numero perfecto: " + perfecto);
+        System.out.println("el resultado de el numero factorial: " + factoral);
     }
 }

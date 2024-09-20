@@ -85,8 +85,9 @@ return count;
             if ( number % i == 0 ){
                 suma = suma + i; 
             }
+            
         }
-    return suma == number;
+        return suma == number;
     }
 
     /**
@@ -97,7 +98,13 @@ return count;
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
- 
+        int factoral=1;
+        int i;
+        for ( i = 1 ; i <= number; i ++ ){
+            factoral=factoral*i;
+
+        }
+        return factoral;
     }
 
     /**
