@@ -1,4 +1,6 @@
 
+import java.awt.Container;
+
 /**
  * La clase DataStructuresPrep está diseñada para reforzar conceptos
  * fundamentales de programación. A través de una serie
@@ -16,19 +18,23 @@
  * estructuras de datos y cómo pueden manipularlas eficientemente.
  */
 public class DataStructuresPrep {
-
     /**
      * Resta dos números sin utilizar el operador de resta.
      * 
      * @param a El minuendo.
      * @param b El sustraendo.
      * @return El resultado de restar b a a.
-     *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
+     *         Ejemplo: subtractAlgorithm(8, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
+        int count = 0 ;
+        while ( a > (b+count) )  {
+            count++;
 
+        }
+        return count;
+    }
+        
     /**
      * Multiplica dos números sin utilizar el operador de multiplicación.
      * 
@@ -38,8 +44,11 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int resultado=0;
+        for (int i = 0 ; i < b ; i++ ){
+            resultado = resultado + a;
+        }
+        return resultado;
     }
 
     /**
@@ -51,8 +60,15 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count= 0;
+        int residuo = dividend;
+        while ( residuo >= divisor ) 
+        {
 
+            count++;
+            residuo = residuo - divisor;
+        }
+return count;
     }
 
     /**
@@ -64,7 +80,13 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int i, suma=0 ;
+        for ( i = 1; i < number ; i++) {
+            if ( number % i == 0 ){
+                suma = suma + i; 
+            }
+        }
+    return suma == number;
     }
 
     /**
@@ -75,7 +97,7 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+ 
     }
 
     /**
@@ -86,7 +108,7 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
     }
 
     /**
@@ -98,7 +120,7 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+
     }
 
     /**
