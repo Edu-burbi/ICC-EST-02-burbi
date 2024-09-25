@@ -62,8 +62,7 @@ public class DataStructuresPrep {
     public int divideWAlgorithm(int dividend, int divisor) {
         int count= 0;
         int residuo = dividend;
-        while ( residuo >= divisor ) 
-        {
+        while ( residuo >= divisor ) {
 
             count++;
             residuo = residuo - divisor;
@@ -115,8 +114,7 @@ return count;
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-
-    }
+        
 
     /**
      * Calcula la potencia de un número sin utilizar Math.pow.
